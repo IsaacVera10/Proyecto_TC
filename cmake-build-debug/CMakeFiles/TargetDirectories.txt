@@ -1,0 +1,3 @@
+D:/Proyecto_TC/cmake-build-debug/CMakeFiles/Proyecto_TC.dir
+D:/Proyecto_TC/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Proyecto_TC/cmake-build-debug/CMakeFiles/rebuild_cache.dir
