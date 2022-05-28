@@ -32,7 +32,7 @@ void grafo:: CreateEdge(string trans, int id1, int id2){
 
 void grafo::resize(){
     Nodeg** NuevaLista = new Nodeg*[capacity * 2];
-    for(int x = 0; x < capacity; ++x){
+    for(int x = 0; x < capacity; ++x){  //Se transfiere todos los datos a la nuevalista
         NuevaLista[x] = Lista[x];
     }
 

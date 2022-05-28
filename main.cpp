@@ -17,13 +17,13 @@ bool  is_Correct(string T, string alfabeto){ // o(N^2)
     return true;
 }
 
-grafo Pregunta_1(){
+grafo funcion_pregunta_1(){
     grafo resultado(10);
 
     string alfabeto;
     int num_Ts;
     cout<<"Introduzca el alfabeto:"; cin >> alfabeto;
-    cout<<"Introduzca la cantidad de cadenas:";cin>> num_Ts;
+    cout<<"Introduzca la cantidad de cadenas(T):";cin>> num_Ts;
 
     string* Ts = new string[num_Ts]; //Reserva de memoria de las cadenas en T
 
@@ -77,6 +77,28 @@ grafo Pregunta_1(){
     return resultado;
 }
 
+void Pregunta_1(){
+    grafo  a = funcion_pregunta_1();
+    a.display();
+}
+
+void Pregunta_2(){
+    grafo  a = funcion_pregunta_1();
+
+    int num_Ss;
+    cout<<"Introduzca la cantidad de cadenas(S):";cin>> num_Ss;
+
+    string* Ss = new string[num_Ss]; //Reserva de memoria de las cadenas en S
+
+    int contS = 0;//contador
+
+    while(contS < num_Ss){//Lectura de cadenas
+        cin >> Ss[contS];
+        ++contS;
+    }
+}
+
+
 void ejemplo(){
     grafo nuevo(2);
     nuevo.CreateVertex(0);
@@ -89,9 +111,9 @@ void ejemplo(){
 }
 
 int main() {
-    //ejemplo();
-    grafo  a = Pregunta_1();
+    //Pregunta_1();
+    Pregunta_2();
 
-    a.display();
+
     return 0;
 }
