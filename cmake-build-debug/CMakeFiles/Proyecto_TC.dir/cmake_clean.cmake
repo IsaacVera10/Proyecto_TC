@@ -5,8 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Proyecto_TC.dir/main.cpp.obj.d"
   "Proyecto_TC.exe"
   "Proyecto_TC.exe.manifest"
+  "Proyecto_TC.lib"
   "Proyecto_TC.pdb"
-  "libProyecto_TC.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.
