@@ -184,12 +184,21 @@ int main() {
     //Pregunta_1();
     //Pregunta_2();
     // codigo git: git pull ,  git reset --hard f7f436dbaaf0a4cfd71870f1d82536208c6675dc
-    /*
+    int size = 0;
+
     grafo a = funcion_pregunta_1();
     a.display();
-    cout<<a.GetAlcance(0,"e");
-    */
-    ejemplo();
+    int* array = a.GetAlcance(0,"w", size);
+
+    cout<<endl;
+
+    for(int i=0;i<size;i++){
+        cout<<*(array+i)<<" ";
+    }
+
+    cout<<endl<<size;
+
+    //ejemplo();
 
     return 0;
 }

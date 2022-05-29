@@ -32,6 +32,6 @@ public:
     void createEfinal(int num_e);
     void setEfinal(int id);
     void clear();
-    int* GetAlcance(int estado, string transicion);
+    int* GetAlcance(int estado, string transicion, int &size);
 };
 #endif //TC_BORRADOR_GRAFO_H

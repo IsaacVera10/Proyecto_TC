@@ -3,13 +3,13 @@
 //
 #include "Grafo.h"
 
-Nodeg:: Nodeg(int i, string trans){
+Nodeg::Nodeg(int i, string trans){
     id = i;
     transicion = trans;
     next = nullptr;
 }
 
-grafo:: grafo(int c): capacity{c}{
+grafo::grafo(int c): capacity{c}{
     Lista = new Nodeg* [c];
     size = 0;
     num_idsF = 0;
@@ -67,15 +67,30 @@ void grafo::setEfinal(int id){
 
 
 
-int* grafo::GetAlcance(int estado, string transicion){
-    int array[]={0};
-    int *arrayint;
+int* grafo::GetAlcance(int estado, string transicion, int &size){
+    static int array[20];
 
     int cont=0;
     Nodeg* temp = Lista[estado];
-    while(temp->next != nullptr){
-        if(temp->transicion == transicion){
-            array[cont] = temp->id;
+
+    while(temp!= nullptr){
+        //cout<<temp->transicion<<" ";
+        if(temp->transicion.size() != 1){//si es que evalua alfabeto
+            for(int i=0;i<temp->transicion.size();i++){
+                char var[1];
+                var[0]=transicion.at(0);
+                if(temp->transicion[i]==var[0]){
+                    array[cont] = temp->id;
+                    size++;
+                    cont++;
+                }
+            }
+        }else {
+            if (temp->transicion == transicion) {
+                array[cont] = temp->id;
+                size++;
+                cont++;
+            }
         }
         temp = temp->next;
     }
