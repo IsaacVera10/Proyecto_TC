@@ -135,8 +135,7 @@ void Pregunta_2(){
                     break;
                 }
 
-                string ch_string(CHAR_LENGTH, caract);
-                int* EstadosPosibles = a.GetAlcance(state, ch_string, num_final);
+                int* EstadosPosibles = a.get_alcance(state, caract, num_final);
                 for(int x = 0; x <  num_final; ++x){
                     cola.push(EstadosPosibles[x]);
                 }
@@ -185,6 +184,7 @@ void Pregunta_3(){
     int size_dfn=0;
     int count =0;
 
+    //Matriz de transiciones del AFN
     for(int i=0;i<a.get_size();i++){
         for(int j=0;j<alfabeto.length();j++){
             string temp;
@@ -198,8 +198,20 @@ void Pregunta_3(){
         cout<<endl;
     }
 
+    //Matriz de transiciones AFD
+    //Estructura de la matriz del AFD
+    //filas:  array con estados
+    //Columna:
+    //Dentro de cada elemento de la matriz hay un array con los estados a llegar
 
-    
+    //A lo mas se tendra |Vertices| * |alfabeto| filas en la matriz del AFD. No me aseguro no necesitar un resize.
+    int* matrizAFD [a.get_size()*alfabeto.length()][alfabeto.length()];
+    int fila_current = 0;
+    /*
+        IDEAS SOBRE LA SOLUCION:
+        -
+     -
+    */
 
 
     grafo result_dfn(10);
@@ -260,12 +272,12 @@ void prueba_Alcance(){
 }
 int main() {
     //Pregunta_1();
-    Pregunta_2();
+    //Pregunta_2();
     // codigo git: git pull ,  git reset --hard f7f436dbaaf0a4cfd71870f1d82536208c6675dc
 
     //ejemplo();
     //prueba_Alcance();
-    //Pregunta_3();
+    Pregunta_3();
 
     return 0;
 }
