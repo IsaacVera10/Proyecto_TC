@@ -95,7 +95,7 @@ void Pregunta_2(){
     grafo  a = funcion_pregunta_1();
 
     int num_Ss;
-    cout<<"Introduzca la cantidad de cadenas(S):";
+    cout << "Introduzca la cantidad de Ss: ";
     cin>> num_Ss;
     string* Ss = new string[num_Ss]; //Reserva de memoria de las cadenas en S
     int contS = 0;//contador
@@ -104,56 +104,59 @@ void Pregunta_2(){
         ++contS;
     }
 
-    //Respuestas
-    bool* res = new bool[num_Ss]; //Me indica si la cadena fue aceptada o no
-    int pos_res = 0; //Me indica en que posicion dentro del array estoy.
+    bool* res = new bool[num_Ss] {}; //Me indica si las cadenas fueron aceptadas o no, por defecto seran false;
 
     queue<int> cola;
-    int size_cola;//Me ayuda a llevar la cuenta de cuantos estados debo verificar.
+    int size_cola;//Tamanho de la cola en la iteracion pasada.
 
-    for(int x = 0; x < num_Ss; ++x){//Recorremos cada cadenas
-        cola.push(0); //A cada iteracion primero ponemos el estado inicial.
+    for(int x = 0; x < num_Ss; ++x){
+        cola.push(0);
         size_cola = 1;
 
-        for(auto caract: Ss[x]){//Recorremos cada caracter de S
+        for(auto caract: Ss[x]){
             while(size_cola > 0){
-                //Se recorre cada elemento de la cola(Los estados) con el caracter actual
                 int state = cola.front();
-                int num_final;//Me dice a cuantos estados puedo llegar
                 cola.pop();
-                //Verificacion de a que estados puedo llegar, desde el estadoCurrent con la transicion(caract)
-                //Posible solucion, implementar un metodo en el grafo. int* GetAlcance(int estado, char transicion, int& variable_tamanho)
+                int num_final = 0;//Me dice a cuantos estados puedo llegar
 
-                if(is_Final(a, state)) {
-                    //Salir de la iteracion de esta cadena y pasar a la siguiente cadena.
-                    res[pos_res] = true;
+                if(is_Final(a, state)) {//Compruebo si el estado actual es final
+                    res[x] = true;
                     break;
                 }
 
-                int* EstadosPosibles; // = getAlcance(state, caract);
+                string ch_string(CHAR_LENGTH, caract);
+                int* EstadosPosibles = a.GetAlcance(state, ch_string, num_final);
                 for(int x = 0; x <  num_final; ++x){
                     cola.push(EstadosPosibles[x]);
                 }
                 --size_cola;
             }
+            if(res[x]) //Si ya determine que la cadena es aceptada, salto a la siguiente cadena.
+                break;
 
             size_cola = cola.size();
         }
-        //Verifico que los estados que quedan en la cola no sean estados finales. y ademas limpio la cola para la siguiente iteracion.
+
+        //Verifico que los estados que quedan en la cola no sean estados finales. Ademas limpio la cola para la siguiente iteracion.
         while(!cola.empty()){
             int current = cola.front();
             cola.pop();
-
-            if(is_Final(a, current))
-                    res[pos_res] = true;
+            if(is_Final(a, current)) {
+                res[x] = true;
+            }
         }
-
-        res[pos_res] = false;
-        ++pos_res;
     }
 
+    //Impresion de si fue aceptado o no
+    for(int x = 0; x < num_Ss; ++x){
+        if(res[x])
+            cout << "TRUE" << endl;
+        else
+            cout << "FALSE" << endl;
+    }
 
-
+    //Liberacion de memoria
+    delete [] res;
 }
 
 
@@ -180,10 +183,8 @@ void ejemplo(){
 
 }
 
-int main() {
-    //Pregunta_1();
-    //Pregunta_2();
-    // codigo git: git pull ,  git reset --hard f7f436dbaaf0a4cfd71870f1d82536208c6675dc
+
+void prueba_Alcance(){
     int size = 0;
 
     grafo a = funcion_pregunta_1();
@@ -197,6 +198,12 @@ int main() {
     }
 
     cout<<endl<<size;
+
+}
+int main() {
+    //Pregunta_1();
+    Pregunta_2();
+    // codigo git: git pull ,  git reset --hard f7f436dbaaf0a4cfd71870f1d82536208c6675dc
 
     //ejemplo();
 
