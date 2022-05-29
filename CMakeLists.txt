@@ -3,4 +3,4 @@ project(Proyecto_TC)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Proyecto_TC main.cpp grafo.h grafo.cpp)
+add_executable(Proyecto_TC main.cpp grafo.h grafo.cpp "Contenedores/double.h" "Contenedores/Queue.h")

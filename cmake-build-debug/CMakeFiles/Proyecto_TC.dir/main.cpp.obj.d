@@ -157,4 +157,5 @@ CMakeFiles/Proyecto_TC.dir/main.cpp.obj: D:\Proyecto_TC\main.cpp \
  C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/vector.tcc \
  C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_queue.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/uses_allocator.h \
- D:\Proyecto_TC\Grafo.h
+ D:\Proyecto_TC\Grafo.h D:\Proyecto_TC\Contenedores/Queue.h \
+ D:\Proyecto_TC\Contenedores/double.h

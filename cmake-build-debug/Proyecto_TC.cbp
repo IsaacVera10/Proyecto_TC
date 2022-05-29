@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/Proyecto_TC/Contenedores/Queue.h">
+			<Option target="Proyecto_TC"/>
+		</Unit>
+		<Unit filename="D:/Proyecto_TC/Contenedores/double.h">
+			<Option target="Proyecto_TC"/>
+		</Unit>
 		<Unit filename="D:/Proyecto_TC/Grafo.cpp">
 			<Option target="Proyecto_TC"/>
 		</Unit>

@@ -2,6 +2,8 @@
 #include <string>
 #include <queue>
 #include "Grafo.h"
+#include "Contenedores/Queue.h"
+
 using namespace std;
 constexpr int CHAR_LENGTH = 1;
 
@@ -115,7 +117,7 @@ void Pregunta_2(){
 
     bool* res = new bool[num_Ss] {}; //Me indica si las cadenas fueron aceptadas o no, por defecto seran false;
 
-    queue<int> cola;
+    QueueNode<int> cola;
     int size_cola;//Tamanho de la cola en la iteracion pasada.
 
     for(int x = 0; x < num_Ss; ++x){
@@ -258,12 +260,12 @@ void prueba_Alcance(){
 }
 int main() {
     //Pregunta_1();
-    //Pregunta_2();
+    Pregunta_2();
     // codigo git: git pull ,  git reset --hard f7f436dbaaf0a4cfd71870f1d82536208c6675dc
 
     //ejemplo();
     //prueba_Alcance();
-    Pregunta_3();
+    //Pregunta_3();
 
     return 0;
 }
