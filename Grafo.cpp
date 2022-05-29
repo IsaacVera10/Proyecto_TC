@@ -3,7 +3,7 @@
 //
 #include "Grafo.h"
 
-Nodeg:: Nodeg(int i, Nodeg** pos, string trans){
+Nodeg:: Nodeg(int i, string trans){
     id = i;
     transicion = trans;
     next = nullptr;
@@ -18,14 +18,14 @@ grafo:: grafo(int c): capacity{c}{
 void grafo:: CreateVertex(int id){
     if(capacity == size)
         resize();
-    Lista[size] = new Nodeg(id, Lista+size, "");//No se puede poner cadena vacia( '') por lo que puse ' '
+    Lista[size] = new Nodeg(id, "");//No se puede poner cadena vacia( '') por lo que puse ' '
 
     ++size;
 }
 
 
 void grafo:: CreateEdge(string trans, int id1, int id2){
-    Nodeg* nuevo = new Nodeg(id2, Lista + id2, trans);
+    Nodeg* nuevo = new Nodeg(id2, trans);
     nuevo->next =  Lista[id1]->next;
     Lista[id1]->next = nuevo;
 }
@@ -66,6 +66,23 @@ void grafo::setEfinal(int id){
 }
 
 
+
+int* grafo::GetAlcance(int estado, string transicion){
+    int array[]={0};
+    int *arrayint;
+
+    int cont=0;
+    Nodeg* temp = Lista[estado];
+    while(temp->next != nullptr){
+        if(temp->transicion == transicion){
+            array[cont] = temp->id;
+        }
+        temp = temp->next;
+    }
+
+    return array;
+}
+
 void grafo::clear(){
     for(int x = 0; x < size; ++x){
         //Similar a un clear de un foward_list
@@ -80,3 +97,4 @@ void grafo::clear(){
     delete [] Lista;
     size = 0;
 }
+

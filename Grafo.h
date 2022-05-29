@@ -13,15 +13,15 @@ struct Nodeg{
     string transicion;
     Nodeg* next;
 
-    Nodeg(int i, Nodeg** pos, string trans);
+    Nodeg(int i, string trans);
 };
 
 class grafo{
     Nodeg** Lista;
     int capacity;
     int size;
-    int num_idsF;
 public:
+    int num_idsF;
     int* ids_final;
     grafo(int c);
 
@@ -32,5 +32,6 @@ public:
     void createEfinal(int num_e);
     void setEfinal(int id);
     void clear();
+    int* GetAlcance(int estado, string transicion);
 };
 #endif //TC_BORRADOR_GRAFO_H
