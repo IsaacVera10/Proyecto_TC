@@ -1,7 +1,6 @@
 //
 // Created by Juan jose on 27/05/2022.
 //
-
 #include "Grafo.h"
 
 Nodeg:: Nodeg(int i, Nodeg** pos, string trans){
@@ -13,6 +12,7 @@ Nodeg:: Nodeg(int i, Nodeg** pos, string trans){
 grafo:: grafo(int c): capacity{c}{
     Lista = new Nodeg* [c];
     size = 0;
+    num_idsF = 0;
 }
 
 void grafo:: CreateVertex(int id){
@@ -32,11 +32,13 @@ void grafo:: CreateEdge(string trans, int id1, int id2){
 
 void grafo::resize(){
     Nodeg** NuevaLista = new Nodeg*[capacity * 2];
-    for(int x = 0; x < capacity; ++x){  //Se transfiere todos los datos a la nuevalista
+    for(int x = 0; x < capacity; ++x){
         NuevaLista[x] = Lista[x];
     }
-
+    //int temp = size;
+    //clear();
     Lista = NuevaLista;
+    //size = temp;
     capacity = capacity*2;
 }
 
@@ -54,21 +56,27 @@ void grafo::display(){
     }
 }
 
+void grafo::createEfinal(int num_e){
+    ids_final = new int[num_e];
+}
+
+void grafo::setEfinal(int id){
+    ids_final[num_idsF] = id;
+    ++num_idsF;
+}
+
 
 void grafo::clear(){
     for(int x = 0; x < size; ++x){
-        Nodeg* temp = Lista[x];
-        Nodeg* temp2 = Lista[x]->next;
-        while(temp2 != nullptr) {
+        //Similar a un clear de un foward_list
+        Nodeg* head = Lista[x];
+        while(head != nullptr){
+            Nodeg* temp = head;
+            head = head ->next;
             delete temp;
-            temp = temp2;
-            temp2 = temp2->next;
         }
-        delete temp;
+
     }
     delete [] Lista;
-}
-
-grafo:: ~grafo(){
-    clear();
+    size = 0;
 }

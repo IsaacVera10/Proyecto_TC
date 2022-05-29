@@ -4,6 +4,7 @@
 using namespace std;
 constexpr int CHAR_LENGTH = 1;
 
+/*
 //Verifica que para cada simbolo en T, este esta dentro del alfabeto
 bool  is_Correct(string T, string alfabeto){ // o(N^2)
     for(char item: T){
@@ -15,7 +16,7 @@ bool  is_Correct(string T, string alfabeto){ // o(N^2)
         }
     }
     return true;
-}
+}*/
 
 grafo funcion_pregunta_1(){
     grafo resultado(10);
@@ -23,7 +24,7 @@ grafo funcion_pregunta_1(){
     string alfabeto;
     int num_Ts;
     cout<<"Introduzca el alfabeto:"; cin >> alfabeto;
-    cout<<"Introduzca la cantidad de cadenas(T):";cin>> num_Ts;
+    cout<<"Introduzca la cantidad de cadenas:";cin>> num_Ts;
 
     string* Ts = new string[num_Ts]; //Reserva de memoria de las cadenas en T
 
@@ -34,52 +35,48 @@ grafo funcion_pregunta_1(){
         ++contT;
     }
 
-    /*
-    //Entrada de las cadenas a probar:
-    int num_cadenas;
-    cin >> num_cadenas;
-    string* Ss = new string[num_cadenas];
-
-    contT = 0;
-    while(contT < num_cadenas){
-        cin >> Ts[contT];
-        ++contT;
-    }*/
-
-
     //CODIGO DEL PROBLEMA
     resultado.CreateVertex(0);// Nodo inicial.
     resultado.CreateEdge(alfabeto, 0, 0); //Transicion consigo mismo.
+    resultado.createEfinal(num_Ts);
+
     contT = 1; //Me ayudara a llevar la cuenta del vertice donde estoy.
     bool primero = true;
-
-    //string e_finales;
 
     for(int x = 0; x < num_Ts; ++x) {
         for (auto caracter: Ts[x]) {
             resultado.CreateVertex(contT); //Primero creo el vertice
             string ch_string(CHAR_LENGTH, caracter);
+
             //Si es el primer caracter de T debe tener una conexion con el vertice 0
             if (primero) {
                 resultado.CreateEdge(ch_string, 0, contT);
                 primero = false;
             } else {
-
                 //Sino se conecta con el anterior
                 resultado.CreateEdge(ch_string, contT - 1, contT);
             }
+
             ++contT;
         }
+        resultado.setEfinal(contT-1);
         primero = true;
     }
 
-    delete [] Ts;
     return resultado;
 }
 
 void Pregunta_1(){
     grafo  a = funcion_pregunta_1();
     a.display();
+
+    cout << "estados finales" << endl;
+    for(int x = 0; x < 2; ++x){
+        cout << a.ids_final[x] << " ";
+    }
+    cout << endl;
+
+    a.clear();
 }
 
 void Pregunta_2(){
@@ -96,6 +93,8 @@ void Pregunta_2(){
         cin >> Ss[contS];
         ++contS;
     }
+
+    //Codigo
 }
 
 
@@ -111,9 +110,9 @@ void ejemplo(){
 }
 
 int main() {
-    //Pregunta_1();
-    Pregunta_2();
-
+    Pregunta_1();
+    //Pregunta_2();
+    // codigo git: git pull ,  git reset --hard f7f436dbaaf0a4cfd71870f1d82536208c6675dc
 
     return 0;
 }

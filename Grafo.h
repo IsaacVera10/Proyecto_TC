@@ -5,6 +5,7 @@
 #define TC_BORRADOR_GRAFO_H
 
 #include <iostream>
+#include <string>
 using namespace std;
 
 struct Nodeg{
@@ -19,16 +20,17 @@ class grafo{
     Nodeg** Lista;
     int capacity;
     int size;
+    int num_idsF;
 public:
+    int* ids_final;
     grafo(int c);
 
     void CreateVertex(int id);
     void CreateEdge(string trans, int id1, int id2);
     void resize();
     void display();
+    void createEfinal(int num_e);
+    void setEfinal(int id);
     void clear();
-
-    ~grafo();
 };
-
 #endif //TC_BORRADOR_GRAFO_H
