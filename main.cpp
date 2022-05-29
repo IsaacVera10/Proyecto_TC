@@ -21,15 +21,8 @@ bool  is_Correct(string T, string alfabeto){ // o(N^2)
 
 
 
-grafo funcion_pregunta_1(){
+grafo funcion_pregunta_1(string alfabeto, int num_Ts){
     grafo resultado(10);
-
-    string alfabeto;
-    int num_Ts;
-    cout<<"Introduzca el alfabeto:";
-    cin >> alfabeto;
-    cout<<"Introduzca la cantidad de cadenas:";
-    cin>> num_Ts;
 
     string* Ts = new string[num_Ts]; //Reserva de memoria de las cadenas en T
 
@@ -72,7 +65,15 @@ grafo funcion_pregunta_1(){
 }
 
 void Pregunta_1(){
-    grafo  a = funcion_pregunta_1();
+    string alfabeto;
+    int num_Ts;
+
+    cout<<"Introduzca el alfabeto:";
+    cin >> alfabeto;
+    cout<<"Introduzca la cantidad de cadenas:";
+    cin>> num_Ts;
+
+    grafo  a = funcion_pregunta_1(alfabeto, num_Ts);
     a.display();
 
     cout << "estados finales" << endl;
@@ -92,7 +93,15 @@ bool is_Final(grafo g, int estado){
 }
 
 void Pregunta_2(){
-    grafo  a = funcion_pregunta_1();
+    string alfabeto;
+    int num_Ts;
+
+    cout<<"Introduzca el alfabeto:";
+    cin >> alfabeto;
+    cout<<"Introduzca la cantidad de cadenas:";
+    cin>> num_Ts;
+
+    grafo  a = funcion_pregunta_1(alfabeto, num_Ts);
 
     int num_Ss;
     cout << "Introduzca la cantidad de Ss: ";
@@ -159,6 +168,43 @@ void Pregunta_2(){
     delete [] res;
 }
 
+void Pregunta_3(){
+    string alfabeto;
+    int num_Ts;
+
+    cout<<"Introduzca el alfabeto:";
+    cin >> alfabeto;
+    cout<<"Introduzca la cantidad de cadenas:";
+    cin>> num_Ts;
+
+    grafo  a = funcion_pregunta_1(alfabeto, num_Ts);
+
+    int* matriz_dfn[a.get_size()][alfabeto.length()];
+    int size_dfn=0;
+    int count =0;
+
+    for(int i=0;i<a.get_size();i++){
+        for(int j=0;j<alfabeto.length();j++){
+            string temp;
+            matriz_dfn[i][j] = a.get_alcance(i,alfabeto[j],size_dfn);
+            for(int k=0;k<size_dfn;k++){
+                cout<<*(matriz_dfn[i][j]+k)<<",";
+            }
+            size_dfn=0;
+            cout<<"   ";
+        }
+        cout<<endl;
+    }
+
+
+    
+
+
+    grafo result_dfn(10);
+
+
+}
+
 
 void ejemplo(){
     grafo nuevo(2);
@@ -187,8 +233,18 @@ void ejemplo(){
 void prueba_Alcance(){
     int size = 0;
 
-    grafo a = funcion_pregunta_1();
+    string alfabeto;
+    int num_Ts;
+
+    cout<<"Introduzca el alfabeto:";
+    cin >> alfabeto;
+    cout<<"Introduzca la cantidad de cadenas:";
+    cin>> num_Ts;
+
+
+    grafo a = funcion_pregunta_1(alfabeto, num_Ts);
     a.display();
+    cout<<a.get_size();
     int* array = a.GetAlcance(0,"w", size);
 
     cout<<endl;
@@ -202,10 +258,12 @@ void prueba_Alcance(){
 }
 int main() {
     //Pregunta_1();
-    Pregunta_2();
+    //Pregunta_2();
     // codigo git: git pull ,  git reset --hard f7f436dbaaf0a4cfd71870f1d82536208c6675dc
 
     //ejemplo();
+    //prueba_Alcance();
+    Pregunta_3();
 
     return 0;
 }

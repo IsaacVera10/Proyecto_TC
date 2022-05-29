@@ -2,6 +2,7 @@
 // Created by Juan jose on 27/05/2022.
 //
 #include "Grafo.h"
+constexpr int CHAR_LENGTH = 1;
 
 Nodeg::Nodeg(int i, string trans){
     id = i;
@@ -67,7 +68,7 @@ void grafo::setEfinal(int id){
 
 
 
-int* grafo::GetAlcance(int estado, string transicion, int &size){
+int* grafo::GetAlcance(int estado, string transicion, int &tam){
     static int array[20];
 
     int cont=0;
@@ -75,20 +76,20 @@ int* grafo::GetAlcance(int estado, string transicion, int &size){
 
     while(temp!= nullptr){
         //cout<<temp->transicion<<" ";
-        if(temp->transicion.size() != 1){//si es que evalua alfabeto
-            for(int i=0;i<temp->transicion.size();i++){
+        if(temp->transicion.length() != 1){//si es que evalua alfabeto
+            for(int i=0;i<temp->transicion.length();i++){
                 char var[1];
                 var[0]=transicion.at(0);
                 if(temp->transicion[i]==var[0]){
                     array[cont] = temp->id;
-                    size++;
+                    tam++;
                     cont++;
                 }
             }
         }else {
             if (temp->transicion == transicion) {
                 array[cont] = temp->id;
-                size++;
+                tam++;
                 cont++;
             }
         }
@@ -97,6 +98,38 @@ int* grafo::GetAlcance(int estado, string transicion, int &size){
 
     return array;
 }
+
+int* grafo::get_alcance(int estado, char transicion, int &tam){
+    static int array[20];
+
+    int cont=0;
+    Nodeg* temp = Lista[estado];
+
+    while(temp!= nullptr){
+        //cout<<temp->transicion<<" ";
+        if(temp->transicion.length() != 1){//si es que evalua alfabeto
+            for(int i=0;i<temp->transicion.length();i++){
+                if(temp->transicion[i]==transicion){
+                    array[cont] = temp->id;
+                    tam++;
+                    cont++;
+                }
+            }
+        }else {
+            string tmp(CHAR_LENGTH, transicion);
+            if (temp->transicion == tmp) {
+                array[cont] = temp->id;
+                tam++;
+                cont++;
+            }
+        }
+        temp = temp->next;
+    }
+
+    return array;
+}
+
+
 
 void grafo::clear(){
     for(int x = 0; x < size; ++x){
@@ -113,3 +146,6 @@ void grafo::clear(){
     size = 0;
 }
 
+int grafo::get_size(){
+    return size;
+}
