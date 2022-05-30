@@ -4,114 +4,16 @@
 
 #include "ProblemaSubstring.h"
 
-void Pregunta_1(){
-    string alfabeto;
-    int num_Ts;
-
-    cout<<"Introduzca el alfabeto:";
-    cin >> alfabeto;
-    cout<<"Introduzca la cantidad de cadenas:";
-    cin>> num_Ts;
-
-    grafo  AFN = buildAFN(alfabeto, num_Ts);
-    AFN.display();
-
-    cout << "estados finales" << endl;
-    for(int x = 0; x < 2; ++x){
-        cout << AFN.ids_final[x] << " ";
-    }
-    cout << endl;
-    AFN.clear();
-}
-
-void Pregunta_2(){
-    string alfabeto;
-    int num_Ts;
-
-    cout<<"Introduzca el alfabeto:";
-    cin >> alfabeto;
-    cout<<"Introduzca la cantidad de cadenas:";
-    cin>> num_Ts;
-
-    grafo  AFN = buildAFN(alfabeto, num_Ts);
-
-    int num_Ss;
-    cout << "Introduzca la cantidad de Ss: ";
-    cin>> num_Ss;
-    string* Ss = new string[num_Ss]; //Reserva de memoria de las cadenas en S
-    int contS = 0;//contador
-    while(contS < num_Ss){//Lectura de cadenas
-        cin >> Ss[contS];
-        ++contS;
-    }
-
-    bool* res = new bool[num_Ss] {}; //Me indica si las cadenas fueron aceptadas o no, por defecto seran false;
-
-    QueueNode<int> cola;
-    int size_cola;//Tamanho de la cola en la iteracion pasada.
-
-    for(int x = 0; x < num_Ss; ++x){
-        cola.push(0);
-        size_cola = 1;
-
-        for(auto caract: Ss[x]){
-            while(size_cola > 0){
-                int state = cola.front();
-                cola.pop();
-                int num_final = 0;//Me dice a cuantos estados puedo llegar
-
-                if(is_Final(AFN, state)) {//Compruebo si el estado actual es final
-                    res[x] = true;
-                    break;
-                }
-
-                int* EstadosPosibles = AFN.get_alcance(state, caract, num_final);
-                for(int x = 0; x <  num_final; ++x){
-                    cola.push(EstadosPosibles[x]);
-                }
-                --size_cola;
-            }
-            if(res[x]) //Si ya determine que la cadena es aceptada, salto a la siguiente cadena.
-                break;
-
-            size_cola = cola.size();
-        }
-
-        //Verifico que los estados que quedan en la cola no sean estados finales. Ademas limpio la cola para la siguiente iteracion.
-        while(!cola.empty()){
-            int current = cola.front();
-            cola.pop();
-            if(is_Final(AFN, current)) {
-                res[x] = true;
-            }
-        }
-    }
-
-    //Impresion de si fue aceptado o no
-    for(int x = 0; x < num_Ss; ++x){
-        if(res[x])
-            cout << "SI" << endl;
-        else
-            cout << "NO" << endl;
-    }
-
-    //Liberacion de memoria
-    delete [] res;
-}
-
 void Pregunta_3(){
     string alfabeto;
     int num_Ts;
 
-    cout<<"Introduzca el alfabeto:";
     cin >> alfabeto;
-    cout<<"Introduzca la cantidad de cadenas:";
     cin>> num_Ts;
 
     grafo  AFN = buildAFN(alfabeto, num_Ts);
 
     int num_Ss;
-    cout << "Introduzca la cantidad de Ss: ";
     cin>> num_Ss;
     string* Ss = new string[num_Ss]; //Reserva de memoria de las cadenas en S
     int contS = 0;//contador
@@ -140,7 +42,6 @@ void Pregunta_3(){
 
     int fCurrent = 0; //indica que fila estoy recorriendo.
 
-    //Por aqui esta el error
     while(fCurrent < pos_array){
         for (int j = 0; j < alfabeto.length(); j++) {
             bloque llegada = calculate(arrayBloque[fCurrent], alfabeto[j], AFN);
@@ -182,6 +83,10 @@ void Pregunta_3(){
 
         for(auto item: Ss[x]){//Se recorre cada elemento.
             int posAlfabeto = alfabeto.find(item);
+            if(posAlfabeto == std::string::npos){//Se pasa a la siguiente cadena
+                cout << "Se ingreso un caracter que no esta en el alfabeto " << endl;
+                break;
+            }
             state_current = matrizAFD[state_current][posAlfabeto]; //Me indica a que estado transicionare.
 
             //Verifico si es un estado final.
@@ -195,7 +100,7 @@ void Pregunta_3(){
     //Impresion de si fue aceptado o no
     for(int x = 0; x < num_Ss; ++x){
         if(res[x])
-            cout << "SI" << endl;
+            cout << "YES" << endl;
         else
             cout << "NO" << endl;
     }
@@ -210,3 +115,4 @@ void Pregunta_3(){
     delete [] Efinales;
     delete [] res;
 }
+
