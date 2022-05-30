@@ -82,35 +82,67 @@ CMakeFiles/Proyecto_TC.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto_TC.dir/main.cpp.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Proyecto_TC\main.cpp -o CMakeFiles\Proyecto_TC.dir\main.cpp.s
 
-CMakeFiles/Proyecto_TC.dir/Grafo.cpp.obj: CMakeFiles/Proyecto_TC.dir/flags.make
-CMakeFiles/Proyecto_TC.dir/Grafo.cpp.obj: ../Grafo.cpp
-CMakeFiles/Proyecto_TC.dir/Grafo.cpp.obj: CMakeFiles/Proyecto_TC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Proyecto_TC\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Proyecto_TC.dir/Grafo.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Proyecto_TC.dir/Grafo.cpp.obj -MF CMakeFiles\Proyecto_TC.dir\Grafo.cpp.obj.d -o CMakeFiles\Proyecto_TC.dir\Grafo.cpp.obj -c D:\Proyecto_TC\Grafo.cpp
+CMakeFiles/Proyecto_TC.dir/Contenedores/Grafo.cpp.obj: CMakeFiles/Proyecto_TC.dir/flags.make
+CMakeFiles/Proyecto_TC.dir/Contenedores/Grafo.cpp.obj: ../Contenedores/Grafo.cpp
+CMakeFiles/Proyecto_TC.dir/Contenedores/Grafo.cpp.obj: CMakeFiles/Proyecto_TC.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Proyecto_TC\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Proyecto_TC.dir/Contenedores/Grafo.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Proyecto_TC.dir/Contenedores/Grafo.cpp.obj -MF CMakeFiles\Proyecto_TC.dir\Contenedores\Grafo.cpp.obj.d -o CMakeFiles\Proyecto_TC.dir\Contenedores\Grafo.cpp.obj -c D:\Proyecto_TC\Contenedores\Grafo.cpp
 
-CMakeFiles/Proyecto_TC.dir/Grafo.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto_TC.dir/Grafo.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Proyecto_TC\Grafo.cpp > CMakeFiles\Proyecto_TC.dir\Grafo.cpp.i
+CMakeFiles/Proyecto_TC.dir/Contenedores/Grafo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto_TC.dir/Contenedores/Grafo.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Proyecto_TC\Contenedores\Grafo.cpp > CMakeFiles\Proyecto_TC.dir\Contenedores\Grafo.cpp.i
 
-CMakeFiles/Proyecto_TC.dir/Grafo.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto_TC.dir/Grafo.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Proyecto_TC\Grafo.cpp -o CMakeFiles\Proyecto_TC.dir\Grafo.cpp.s
+CMakeFiles/Proyecto_TC.dir/Contenedores/Grafo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto_TC.dir/Contenedores/Grafo.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Proyecto_TC\Contenedores\Grafo.cpp -o CMakeFiles\Proyecto_TC.dir\Contenedores\Grafo.cpp.s
+
+CMakeFiles/Proyecto_TC.dir/Algorithms/Funciones.cpp.obj: CMakeFiles/Proyecto_TC.dir/flags.make
+CMakeFiles/Proyecto_TC.dir/Algorithms/Funciones.cpp.obj: ../Algorithms/Funciones.cpp
+CMakeFiles/Proyecto_TC.dir/Algorithms/Funciones.cpp.obj: CMakeFiles/Proyecto_TC.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Proyecto_TC\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Proyecto_TC.dir/Algorithms/Funciones.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Proyecto_TC.dir/Algorithms/Funciones.cpp.obj -MF CMakeFiles\Proyecto_TC.dir\Algorithms\Funciones.cpp.obj.d -o CMakeFiles\Proyecto_TC.dir\Algorithms\Funciones.cpp.obj -c D:\Proyecto_TC\Algorithms\Funciones.cpp
+
+CMakeFiles/Proyecto_TC.dir/Algorithms/Funciones.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto_TC.dir/Algorithms/Funciones.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Proyecto_TC\Algorithms\Funciones.cpp > CMakeFiles\Proyecto_TC.dir\Algorithms\Funciones.cpp.i
+
+CMakeFiles/Proyecto_TC.dir/Algorithms/Funciones.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto_TC.dir/Algorithms/Funciones.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Proyecto_TC\Algorithms\Funciones.cpp -o CMakeFiles\Proyecto_TC.dir\Algorithms\Funciones.cpp.s
+
+CMakeFiles/Proyecto_TC.dir/Algorithms/ProblemaSubstring.cpp.obj: CMakeFiles/Proyecto_TC.dir/flags.make
+CMakeFiles/Proyecto_TC.dir/Algorithms/ProblemaSubstring.cpp.obj: ../Algorithms/ProblemaSubstring.cpp
+CMakeFiles/Proyecto_TC.dir/Algorithms/ProblemaSubstring.cpp.obj: CMakeFiles/Proyecto_TC.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Proyecto_TC\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Proyecto_TC.dir/Algorithms/ProblemaSubstring.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Proyecto_TC.dir/Algorithms/ProblemaSubstring.cpp.obj -MF CMakeFiles\Proyecto_TC.dir\Algorithms\ProblemaSubstring.cpp.obj.d -o CMakeFiles\Proyecto_TC.dir\Algorithms\ProblemaSubstring.cpp.obj -c D:\Proyecto_TC\Algorithms\ProblemaSubstring.cpp
+
+CMakeFiles/Proyecto_TC.dir/Algorithms/ProblemaSubstring.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto_TC.dir/Algorithms/ProblemaSubstring.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Proyecto_TC\Algorithms\ProblemaSubstring.cpp > CMakeFiles\Proyecto_TC.dir\Algorithms\ProblemaSubstring.cpp.i
+
+CMakeFiles/Proyecto_TC.dir/Algorithms/ProblemaSubstring.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto_TC.dir/Algorithms/ProblemaSubstring.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Proyecto_TC\Algorithms\ProblemaSubstring.cpp -o CMakeFiles\Proyecto_TC.dir\Algorithms\ProblemaSubstring.cpp.s
 
 # Object files for target Proyecto_TC
 Proyecto_TC_OBJECTS = \
 "CMakeFiles/Proyecto_TC.dir/main.cpp.obj" \
-"CMakeFiles/Proyecto_TC.dir/Grafo.cpp.obj"
+"CMakeFiles/Proyecto_TC.dir/Contenedores/Grafo.cpp.obj" \
+"CMakeFiles/Proyecto_TC.dir/Algorithms/Funciones.cpp.obj" \
+"CMakeFiles/Proyecto_TC.dir/Algorithms/ProblemaSubstring.cpp.obj"
 
 # External object files for target Proyecto_TC
 Proyecto_TC_EXTERNAL_OBJECTS =
 
 Proyecto_TC.exe: CMakeFiles/Proyecto_TC.dir/main.cpp.obj
-Proyecto_TC.exe: CMakeFiles/Proyecto_TC.dir/Grafo.cpp.obj
+Proyecto_TC.exe: CMakeFiles/Proyecto_TC.dir/Contenedores/Grafo.cpp.obj
+Proyecto_TC.exe: CMakeFiles/Proyecto_TC.dir/Algorithms/Funciones.cpp.obj
+Proyecto_TC.exe: CMakeFiles/Proyecto_TC.dir/Algorithms/ProblemaSubstring.cpp.obj
 Proyecto_TC.exe: CMakeFiles/Proyecto_TC.dir/build.make
 Proyecto_TC.exe: CMakeFiles/Proyecto_TC.dir/linklibs.rsp
 Proyecto_TC.exe: CMakeFiles/Proyecto_TC.dir/objects1.rsp
 Proyecto_TC.exe: CMakeFiles/Proyecto_TC.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Proyecto_TC\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Proyecto_TC.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Proyecto_TC\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Proyecto_TC.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Proyecto_TC.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -128,29 +128,77 @@ Proyecto_TC/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto_TC.dir\build.make CMakeFiles/Proyecto_TC.dir/build
 .PHONY : Proyecto_TC/fast
 
-Grafo.obj: Grafo.cpp.obj
-.PHONY : Grafo.obj
+Algorithms/Funciones.obj: Algorithms/Funciones.cpp.obj
+.PHONY : Algorithms/Funciones.obj
 
 # target to build an object file
-Grafo.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto_TC.dir\build.make CMakeFiles/Proyecto_TC.dir/Grafo.cpp.obj
-.PHONY : Grafo.cpp.obj
+Algorithms/Funciones.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto_TC.dir\build.make CMakeFiles/Proyecto_TC.dir/Algorithms/Funciones.cpp.obj
+.PHONY : Algorithms/Funciones.cpp.obj
 
-Grafo.i: Grafo.cpp.i
-.PHONY : Grafo.i
+Algorithms/Funciones.i: Algorithms/Funciones.cpp.i
+.PHONY : Algorithms/Funciones.i
 
 # target to preprocess a source file
-Grafo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto_TC.dir\build.make CMakeFiles/Proyecto_TC.dir/Grafo.cpp.i
-.PHONY : Grafo.cpp.i
+Algorithms/Funciones.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto_TC.dir\build.make CMakeFiles/Proyecto_TC.dir/Algorithms/Funciones.cpp.i
+.PHONY : Algorithms/Funciones.cpp.i
 
-Grafo.s: Grafo.cpp.s
-.PHONY : Grafo.s
+Algorithms/Funciones.s: Algorithms/Funciones.cpp.s
+.PHONY : Algorithms/Funciones.s
 
 # target to generate assembly for a file
-Grafo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto_TC.dir\build.make CMakeFiles/Proyecto_TC.dir/Grafo.cpp.s
-.PHONY : Grafo.cpp.s
+Algorithms/Funciones.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto_TC.dir\build.make CMakeFiles/Proyecto_TC.dir/Algorithms/Funciones.cpp.s
+.PHONY : Algorithms/Funciones.cpp.s
+
+Algorithms/ProblemaSubstring.obj: Algorithms/ProblemaSubstring.cpp.obj
+.PHONY : Algorithms/ProblemaSubstring.obj
+
+# target to build an object file
+Algorithms/ProblemaSubstring.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto_TC.dir\build.make CMakeFiles/Proyecto_TC.dir/Algorithms/ProblemaSubstring.cpp.obj
+.PHONY : Algorithms/ProblemaSubstring.cpp.obj
+
+Algorithms/ProblemaSubstring.i: Algorithms/ProblemaSubstring.cpp.i
+.PHONY : Algorithms/ProblemaSubstring.i
+
+# target to preprocess a source file
+Algorithms/ProblemaSubstring.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto_TC.dir\build.make CMakeFiles/Proyecto_TC.dir/Algorithms/ProblemaSubstring.cpp.i
+.PHONY : Algorithms/ProblemaSubstring.cpp.i
+
+Algorithms/ProblemaSubstring.s: Algorithms/ProblemaSubstring.cpp.s
+.PHONY : Algorithms/ProblemaSubstring.s
+
+# target to generate assembly for a file
+Algorithms/ProblemaSubstring.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto_TC.dir\build.make CMakeFiles/Proyecto_TC.dir/Algorithms/ProblemaSubstring.cpp.s
+.PHONY : Algorithms/ProblemaSubstring.cpp.s
+
+Contenedores/Grafo.obj: Contenedores/Grafo.cpp.obj
+.PHONY : Contenedores/Grafo.obj
+
+# target to build an object file
+Contenedores/Grafo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto_TC.dir\build.make CMakeFiles/Proyecto_TC.dir/Contenedores/Grafo.cpp.obj
+.PHONY : Contenedores/Grafo.cpp.obj
+
+Contenedores/Grafo.i: Contenedores/Grafo.cpp.i
+.PHONY : Contenedores/Grafo.i
+
+# target to preprocess a source file
+Contenedores/Grafo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto_TC.dir\build.make CMakeFiles/Proyecto_TC.dir/Contenedores/Grafo.cpp.i
+.PHONY : Contenedores/Grafo.cpp.i
+
+Contenedores/Grafo.s: Contenedores/Grafo.cpp.s
+.PHONY : Contenedores/Grafo.s
+
+# target to generate assembly for a file
+Contenedores/Grafo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto_TC.dir\build.make CMakeFiles/Proyecto_TC.dir/Contenedores/Grafo.cpp.s
+.PHONY : Contenedores/Grafo.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -185,9 +233,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Proyecto_TC
-	@echo ... Grafo.obj
-	@echo ... Grafo.i
-	@echo ... Grafo.s
+	@echo ... Algorithms/Funciones.obj
+	@echo ... Algorithms/Funciones.i
+	@echo ... Algorithms/Funciones.s
+	@echo ... Algorithms/ProblemaSubstring.obj
+	@echo ... Algorithms/ProblemaSubstring.i
+	@echo ... Algorithms/ProblemaSubstring.s
+	@echo ... Contenedores/Grafo.obj
+	@echo ... Contenedores/Grafo.i
+	@echo ... Contenedores/Grafo.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

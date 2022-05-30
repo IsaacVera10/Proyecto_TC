@@ -82,16 +82,31 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/Proyecto_TC/Algorithms/Funciones.cpp">
+			<Option target="Proyecto_TC"/>
+		</Unit>
+		<Unit filename="D:/Proyecto_TC/Algorithms/Funciones.h">
+			<Option target="Proyecto_TC"/>
+		</Unit>
+		<Unit filename="D:/Proyecto_TC/Algorithms/ProblemaSubstring.cpp">
+			<Option target="Proyecto_TC"/>
+		</Unit>
+		<Unit filename="D:/Proyecto_TC/Algorithms/ProblemaSubstring.h">
+			<Option target="Proyecto_TC"/>
+		</Unit>
+		<Unit filename="D:/Proyecto_TC/Contenedores/Grafo.cpp">
+			<Option target="Proyecto_TC"/>
+		</Unit>
+		<Unit filename="D:/Proyecto_TC/Contenedores/Grafo.h">
+			<Option target="Proyecto_TC"/>
+		</Unit>
 		<Unit filename="D:/Proyecto_TC/Contenedores/Queue.h">
 			<Option target="Proyecto_TC"/>
 		</Unit>
+		<Unit filename="D:/Proyecto_TC/Contenedores/bloque.h">
+			<Option target="Proyecto_TC"/>
+		</Unit>
 		<Unit filename="D:/Proyecto_TC/Contenedores/double.h">
-			<Option target="Proyecto_TC"/>
-		</Unit>
-		<Unit filename="D:/Proyecto_TC/Grafo.cpp">
-			<Option target="Proyecto_TC"/>
-		</Unit>
-		<Unit filename="D:/Proyecto_TC/Grafo.h">
 			<Option target="Proyecto_TC"/>
 		</Unit>
 		<Unit filename="D:/Proyecto_TC/main.cpp">
