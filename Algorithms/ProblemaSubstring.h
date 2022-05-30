@@ -11,7 +11,6 @@
 #include "../Contenedores/Queue.h"
 #include "../Contenedores/bloque.h"
 
-#include <chrono>
 using namespace std;
 
 void Pregunta_1();
