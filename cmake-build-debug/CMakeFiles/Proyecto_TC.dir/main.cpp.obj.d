@@ -151,9 +151,4 @@ CMakeFiles/Proyecto_TC.dir/main.cpp.obj: D:\Proyecto_TC\main.cpp \
  D:/Proyecto_TC/Contenedores/Grafo.h D:/Proyecto_TC/Contenedores/bloque.h \
  D:/Proyecto_TC/Contenedores/Grafo.h D:/Proyecto_TC/Contenedores/Queue.h \
  D:/Proyecto_TC/Contenedores/double.h \
- D:/Proyecto_TC/Contenedores/bloque.h \
- C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/chrono \
- C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ratio \
- C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/limits \
- C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ctime \
- C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/parse_numbers.h
+ D:/Proyecto_TC/Contenedores/bloque.h
