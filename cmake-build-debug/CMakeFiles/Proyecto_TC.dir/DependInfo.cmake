@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/Proyecto_TC/Algorithms/Funciones.cpp" "CMakeFiles/Proyecto_TC.dir/Algorithms/Funciones.cpp.obj" "gcc" "CMakeFiles/Proyecto_TC.dir/Algorithms/Funciones.cpp.obj.d"
   "D:/Proyecto_TC/Algorithms/ProblemaSubstring.cpp" "CMakeFiles/Proyecto_TC.dir/Algorithms/ProblemaSubstring.cpp.obj" "gcc" "CMakeFiles/Proyecto_TC.dir/Algorithms/ProblemaSubstring.cpp.obj.d"
+  "D:/Proyecto_TC/Algorithms/ProblemaTestVacio.cpp" "CMakeFiles/Proyecto_TC.dir/Algorithms/ProblemaTestVacio.cpp.obj" "gcc" "CMakeFiles/Proyecto_TC.dir/Algorithms/ProblemaTestVacio.cpp.obj.d"
   "D:/Proyecto_TC/Contenedores/Grafo.cpp" "CMakeFiles/Proyecto_TC.dir/Contenedores/Grafo.cpp.obj" "gcc" "CMakeFiles/Proyecto_TC.dir/Contenedores/Grafo.cpp.obj.d"
   "D:/Proyecto_TC/main.cpp" "CMakeFiles/Proyecto_TC.dir/main.cpp.obj" "gcc" "CMakeFiles/Proyecto_TC.dir/main.cpp.obj.d"
   )

@@ -94,6 +94,12 @@
 		<Unit filename="D:/Proyecto_TC/Algorithms/ProblemaSubstring.h">
 			<Option target="Proyecto_TC"/>
 		</Unit>
+		<Unit filename="D:/Proyecto_TC/Algorithms/ProblemaTestVacio.cpp">
+			<Option target="Proyecto_TC"/>
+		</Unit>
+		<Unit filename="D:/Proyecto_TC/Algorithms/ProblemaTestVacio.h">
+			<Option target="Proyecto_TC"/>
+		</Unit>
 		<Unit filename="D:/Proyecto_TC/Contenedores/Grafo.cpp">
 			<Option target="Proyecto_TC"/>
 		</Unit>

@@ -176,6 +176,30 @@ Algorithms/ProblemaSubstring.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto_TC.dir\build.make CMakeFiles/Proyecto_TC.dir/Algorithms/ProblemaSubstring.cpp.s
 .PHONY : Algorithms/ProblemaSubstring.cpp.s
 
+Algorithms/ProblemaTestVacio.obj: Algorithms/ProblemaTestVacio.cpp.obj
+.PHONY : Algorithms/ProblemaTestVacio.obj
+
+# target to build an object file
+Algorithms/ProblemaTestVacio.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto_TC.dir\build.make CMakeFiles/Proyecto_TC.dir/Algorithms/ProblemaTestVacio.cpp.obj
+.PHONY : Algorithms/ProblemaTestVacio.cpp.obj
+
+Algorithms/ProblemaTestVacio.i: Algorithms/ProblemaTestVacio.cpp.i
+.PHONY : Algorithms/ProblemaTestVacio.i
+
+# target to preprocess a source file
+Algorithms/ProblemaTestVacio.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto_TC.dir\build.make CMakeFiles/Proyecto_TC.dir/Algorithms/ProblemaTestVacio.cpp.i
+.PHONY : Algorithms/ProblemaTestVacio.cpp.i
+
+Algorithms/ProblemaTestVacio.s: Algorithms/ProblemaTestVacio.cpp.s
+.PHONY : Algorithms/ProblemaTestVacio.s
+
+# target to generate assembly for a file
+Algorithms/ProblemaTestVacio.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto_TC.dir\build.make CMakeFiles/Proyecto_TC.dir/Algorithms/ProblemaTestVacio.cpp.s
+.PHONY : Algorithms/ProblemaTestVacio.cpp.s
+
 Contenedores/Grafo.obj: Contenedores/Grafo.cpp.obj
 .PHONY : Contenedores/Grafo.obj
 
@@ -239,6 +263,9 @@ help:
 	@echo ... Algorithms/ProblemaSubstring.obj
 	@echo ... Algorithms/ProblemaSubstring.i
 	@echo ... Algorithms/ProblemaSubstring.s
+	@echo ... Algorithms/ProblemaTestVacio.obj
+	@echo ... Algorithms/ProblemaTestVacio.i
+	@echo ... Algorithms/ProblemaTestVacio.s
 	@echo ... Contenedores/Grafo.obj
 	@echo ... Contenedores/Grafo.i
 	@echo ... Contenedores/Grafo.s

@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Proyecto_TC.dir/Algorithms/Funciones.cpp.obj.d"
   "CMakeFiles/Proyecto_TC.dir/Algorithms/ProblemaSubstring.cpp.obj"
   "CMakeFiles/Proyecto_TC.dir/Algorithms/ProblemaSubstring.cpp.obj.d"
+  "CMakeFiles/Proyecto_TC.dir/Algorithms/ProblemaTestVacio.cpp.obj"
+  "CMakeFiles/Proyecto_TC.dir/Algorithms/ProblemaTestVacio.cpp.obj.d"
   "CMakeFiles/Proyecto_TC.dir/Contenedores/Grafo.cpp.obj"
   "CMakeFiles/Proyecto_TC.dir/Contenedores/Grafo.cpp.obj.d"
   "CMakeFiles/Proyecto_TC.dir/main.cpp.obj"

@@ -13,4 +13,6 @@ add_executable(Proyecto_TC
         Algorithms/Funciones.h
         Algorithms/Funciones.cpp
         Algorithms/ProblemaSubstring.h
-        Algorithms/ProblemaSubstring.cpp)
+        Algorithms/ProblemaSubstring.cpp
+        Algorithms/ProblemaTestVacio.cpp
+        Algorithms/ProblemaTestVacio.h)
