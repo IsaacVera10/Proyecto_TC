@@ -77,7 +77,7 @@ public:
         if(size_double() == 0) exit(0);
 
         Node<T>* temp = head;
-        int valor = temp->data;
+        T valor = temp->data;
 
         if(size_double() == 1){
             head = nullptr;
@@ -98,7 +98,7 @@ public:
         if(size_double() == 0) exit(0);
 
         Node<T>* temp = tail;
-        int valor = temp->data;
+        T valor = temp->data;
 
         if(size_double() == 1){
             head = nullptr;

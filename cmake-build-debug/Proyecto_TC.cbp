@@ -109,6 +109,9 @@
 		<Unit filename="D:/Proyecto_TC/Contenedores/Queue.h">
 			<Option target="Proyecto_TC"/>
 		</Unit>
+		<Unit filename="D:/Proyecto_TC/Contenedores/blocks.h">
+			<Option target="Proyecto_TC"/>
+		</Unit>
 		<Unit filename="D:/Proyecto_TC/Contenedores/bloque.h">
 			<Option target="Proyecto_TC"/>
 		</Unit>

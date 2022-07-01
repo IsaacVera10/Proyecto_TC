@@ -15,4 +15,4 @@ add_executable(Proyecto_TC
         Algorithms/ProblemaSubstring.h
         Algorithms/ProblemaSubstring.cpp
         Algorithms/ProblemaTestVacio.cpp
-        Algorithms/ProblemaTestVacio.h)
+        Algorithms/ProblemaTestVacio.h Contenedores/blocks.h)
