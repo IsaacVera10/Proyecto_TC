@@ -34,6 +34,10 @@ public:
 
     }
 
+    Node<T>* front(){
+        return head;
+    }
+
     T front_Double(){
         return head->data;
     }
