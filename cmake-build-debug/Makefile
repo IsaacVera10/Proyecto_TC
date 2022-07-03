@@ -224,6 +224,30 @@ Contenedores/Grafo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto_TC.dir\build.make CMakeFiles/Proyecto_TC.dir/Contenedores/Grafo.cpp.s
 .PHONY : Contenedores/Grafo.cpp.s
 
+Contenedores/Grafo2.obj: Contenedores/Grafo2.cpp.obj
+.PHONY : Contenedores/Grafo2.obj
+
+# target to build an object file
+Contenedores/Grafo2.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto_TC.dir\build.make CMakeFiles/Proyecto_TC.dir/Contenedores/Grafo2.cpp.obj
+.PHONY : Contenedores/Grafo2.cpp.obj
+
+Contenedores/Grafo2.i: Contenedores/Grafo2.cpp.i
+.PHONY : Contenedores/Grafo2.i
+
+# target to preprocess a source file
+Contenedores/Grafo2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto_TC.dir\build.make CMakeFiles/Proyecto_TC.dir/Contenedores/Grafo2.cpp.i
+.PHONY : Contenedores/Grafo2.cpp.i
+
+Contenedores/Grafo2.s: Contenedores/Grafo2.cpp.s
+.PHONY : Contenedores/Grafo2.s
+
+# target to generate assembly for a file
+Contenedores/Grafo2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto_TC.dir\build.make CMakeFiles/Proyecto_TC.dir/Contenedores/Grafo2.cpp.s
+.PHONY : Contenedores/Grafo2.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -269,6 +293,9 @@ help:
 	@echo ... Contenedores/Grafo.obj
 	@echo ... Contenedores/Grafo.i
 	@echo ... Contenedores/Grafo.s
+	@echo ... Contenedores/Grafo2.obj
+	@echo ... Contenedores/Grafo2.i
+	@echo ... Contenedores/Grafo2.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

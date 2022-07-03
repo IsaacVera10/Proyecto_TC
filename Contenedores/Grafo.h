@@ -8,6 +8,28 @@
 #include <string>
 using namespace std;
 
+/*
+ nodeh{
+    string id;//135; problema de guardarlo asi, es que puede confundirse con los estados 13 y 5,
+    //en lugar de ller estados: 1, 3 y 5. Por ello seria mejor guardar un array con los estados que forma.
+    array estados; {1,3,5}
+    transiciones:
+     nodeg* next;
+ */
+
+//1 - w -> 2
+//1 - e -> 05
+
+/*
+struct nodeS{
+    string id; //135
+    bloque estados;
+    string transiciones;
+    nodeg* next; //fowardList
+,
+ }
+ */
+
 struct Nodeg{
     int id;//indice del vertice dentro del array y su nombre.
     string transicion;

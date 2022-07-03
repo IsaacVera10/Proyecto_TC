@@ -4,6 +4,8 @@
 #include "Grafo.h"
 constexpr int CHAR_LENGTH = 1;
 
+
+
 Nodeg::Nodeg(int i, string trans){
     id = i;
     transicion = trans;

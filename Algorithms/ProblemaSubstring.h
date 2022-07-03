@@ -19,5 +19,6 @@ void Pregunta_2();
 
 void Pregunta_3();
 
+void Pregunta_4();
 
 #endif //PROYECTO_TC_PROBLEMASUBSTRING_H

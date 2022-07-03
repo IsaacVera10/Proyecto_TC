@@ -106,6 +106,12 @@
 		<Unit filename="D:/Proyecto_TC/Contenedores/Grafo.h">
 			<Option target="Proyecto_TC"/>
 		</Unit>
+		<Unit filename="D:/Proyecto_TC/Contenedores/Grafo2.cpp">
+			<Option target="Proyecto_TC"/>
+		</Unit>
+		<Unit filename="D:/Proyecto_TC/Contenedores/Grafo2.h">
+			<Option target="Proyecto_TC"/>
+		</Unit>
 		<Unit filename="D:/Proyecto_TC/Contenedores/Queue.h">
 			<Option target="Proyecto_TC"/>
 		</Unit>

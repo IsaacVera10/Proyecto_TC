@@ -206,3 +206,23 @@ void Pregunta_3(){
     delete [] Efinales;
     delete [] res;
 }
+
+void Pregunta_4(){
+    string alfabeto;
+    int num_Ts;
+
+    cin >> alfabeto;
+    cin>> num_Ts;
+
+    grafo  AFN = buildAFN(alfabeto, num_Ts);
+
+    AFN.display();
+
+
+    grafo AFD = buildAFD(alfabeto, num_Ts, AFN);
+
+    AFN.clear();
+    AFD.clear();
+    //delete [] Ss;
+
+}

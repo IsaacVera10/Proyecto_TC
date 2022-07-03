@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Proyecto_TC.dir/Algorithms/ProblemaTestVacio.cpp.obj.d"
   "CMakeFiles/Proyecto_TC.dir/Contenedores/Grafo.cpp.obj"
   "CMakeFiles/Proyecto_TC.dir/Contenedores/Grafo.cpp.obj.d"
+  "CMakeFiles/Proyecto_TC.dir/Contenedores/Grafo2.cpp.obj"
+  "CMakeFiles/Proyecto_TC.dir/Contenedores/Grafo2.cpp.obj.d"
   "CMakeFiles/Proyecto_TC.dir/main.cpp.obj"
   "CMakeFiles/Proyecto_TC.dir/main.cpp.obj.d"
   "Proyecto_TC.exe"

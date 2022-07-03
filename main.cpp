@@ -6,11 +6,11 @@
 using namespace std;
 
 int main() {
-    //Pregunta_1();
+    Pregunta_1();
     //Pregunta_2();
     //Pregunta_3();
     //Pregunta_5();
-    Pregunta_6();
+    //Pregunta_6();
 
     return 0;
 }

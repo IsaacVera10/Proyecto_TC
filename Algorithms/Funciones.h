@@ -7,6 +7,7 @@
 
 
 #include "../Contenedores/Grafo.h"
+#include "../Contenedores/Grafo2.h"
 #include "../Contenedores/bloque.h"
 using namespace std;
 constexpr int CHAR_LENGTH = 1;
@@ -21,6 +22,8 @@ bloque calculate(bloque& arreglo, char caracter, grafo graph);
 grafo buildAFN(string alfabeto, int num_Ts);
 
 int igualdad(bloque* fila, int sizeFila, bloque& contenido);
+
+grafo buildAFD(string alfabeto, int num_Ts, grafo graph);
 
 
 #endif //PROYECTO_TC_FUNCIONES_H

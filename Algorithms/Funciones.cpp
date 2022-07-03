@@ -108,3 +108,46 @@ grafo buildAFN(string alfabeto, int num_Ts){
 
     return resultado;
 }
+
+grafo2 buildAFD(string alfabeto, int num_Ts, grafo graph){
+    grafo2 resultado(10);
+////////
+    string* Ts = new string[num_Ts]; //Reserva de memoria de las cadenas en T
+
+    int contT = 0;//contador
+
+    while(contT < num_Ts){//Lectura de cadenas
+        cin >> Ts[contT];
+        ++contT;
+    }
+///////
+    //CODIGO DEL PROBLEMA
+    resultado.CreateVertex(0);// Nodo inicial.
+    resultado.CreateEdge(alfabeto, 0, 0); //Transicion consigo mismo.
+    resultado.createEfinal(num_Ts);
+
+    contT = 1; //Me ayudara a llevar la cuenta del vertice donde estoy.
+    bool primero = true;
+
+    for(int x = 0; x < num_Ts; ++x) {
+        for (auto caracter: Ts[x]) {
+            resultado.CreateVertex(contT); //Primero creo el vertice
+            string ch_string(CHAR_LENGTH, caracter);
+
+            //Si es el primer caracter de T debe tener una conexion con el vertice 0
+            if (primero) {
+                resultado.CreateEdge(ch_string, 0, contT);
+                primero = false;
+            } else {
+                //Sino se conecta con el anterior
+                resultado.CreateEdge(ch_string, contT - 1, contT);
+            }
+
+            ++contT;
+        }
+        resultado.setEfinal(contT-1);
+        primero = true;
+    }
+
+    return resultado;
+}

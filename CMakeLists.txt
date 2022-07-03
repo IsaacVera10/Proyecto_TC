@@ -15,4 +15,7 @@ add_executable(Proyecto_TC
         Algorithms/ProblemaSubstring.h
         Algorithms/ProblemaSubstring.cpp
         Algorithms/ProblemaTestVacio.cpp
-        Algorithms/ProblemaTestVacio.h Contenedores/blocks.h)
+        Algorithms/ProblemaTestVacio.h
+        Contenedores/blocks.h
+        Contenedores/Grafo2.cpp
+        Contenedores/Grafo2.h)
