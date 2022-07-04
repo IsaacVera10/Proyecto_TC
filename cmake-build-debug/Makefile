@@ -248,6 +248,30 @@ Contenedores/Grafo2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto_TC.dir\build.make CMakeFiles/Proyecto_TC.dir/Contenedores/Grafo2.cpp.s
 .PHONY : Contenedores/Grafo2.cpp.s
 
+Experimentacion_numerica/Ejercicio1/Ejercicio1.obj: Experimentacion_numerica/Ejercicio1/Ejercicio1.cpp.obj
+.PHONY : Experimentacion_numerica/Ejercicio1/Ejercicio1.obj
+
+# target to build an object file
+Experimentacion_numerica/Ejercicio1/Ejercicio1.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto_TC.dir\build.make CMakeFiles/Proyecto_TC.dir/Experimentacion_numerica/Ejercicio1/Ejercicio1.cpp.obj
+.PHONY : Experimentacion_numerica/Ejercicio1/Ejercicio1.cpp.obj
+
+Experimentacion_numerica/Ejercicio1/Ejercicio1.i: Experimentacion_numerica/Ejercicio1/Ejercicio1.cpp.i
+.PHONY : Experimentacion_numerica/Ejercicio1/Ejercicio1.i
+
+# target to preprocess a source file
+Experimentacion_numerica/Ejercicio1/Ejercicio1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto_TC.dir\build.make CMakeFiles/Proyecto_TC.dir/Experimentacion_numerica/Ejercicio1/Ejercicio1.cpp.i
+.PHONY : Experimentacion_numerica/Ejercicio1/Ejercicio1.cpp.i
+
+Experimentacion_numerica/Ejercicio1/Ejercicio1.s: Experimentacion_numerica/Ejercicio1/Ejercicio1.cpp.s
+.PHONY : Experimentacion_numerica/Ejercicio1/Ejercicio1.s
+
+# target to generate assembly for a file
+Experimentacion_numerica/Ejercicio1/Ejercicio1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto_TC.dir\build.make CMakeFiles/Proyecto_TC.dir/Experimentacion_numerica/Ejercicio1/Ejercicio1.cpp.s
+.PHONY : Experimentacion_numerica/Ejercicio1/Ejercicio1.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -296,6 +320,9 @@ help:
 	@echo ... Contenedores/Grafo2.obj
 	@echo ... Contenedores/Grafo2.i
 	@echo ... Contenedores/Grafo2.s
+	@echo ... Experimentacion_numerica/Ejercicio1/Ejercicio1.obj
+	@echo ... Experimentacion_numerica/Ejercicio1/Ejercicio1.i
+	@echo ... Experimentacion_numerica/Ejercicio1/Ejercicio1.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

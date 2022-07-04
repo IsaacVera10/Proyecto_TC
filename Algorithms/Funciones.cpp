@@ -108,7 +108,7 @@ grafo buildAFN(string alfabeto, int num_Ts){
 
     return resultado;
 }
-
+/*
 grafo2 buildAFD(string alfabeto, int num_Ts, grafo graph){
     grafo2 resultado(10);
 ////////
@@ -150,4 +150,4 @@ grafo2 buildAFD(string alfabeto, int num_Ts, grafo graph){
     }
 
     return resultado;
-}
+}*/

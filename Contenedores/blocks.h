@@ -4,11 +4,13 @@
 
 #ifndef PROYECTO_TC_BLOCKS_H
 #define PROYECTO_TC_BLOCKS_H
+
 #include<string>
+#include "tupla.h"
 using namespace std;
 
 struct blocks{
-    pair<string, int>* ocurrencia;
+    tupla<string, int>* ocurrencia;
     int position;
 };
 

@@ -7,6 +7,7 @@
 #include "../Contenedores/double.h"
 #include "../Contenedores/blocks.h"
 #include "../Contenedores/Queue.h"
+#include "../Contenedores/tupla.h"
 using namespace std;
 
 void Pregunta_5();

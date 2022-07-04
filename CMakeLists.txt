@@ -18,4 +18,7 @@ add_executable(Proyecto_TC
         Algorithms/ProblemaTestVacio.h
         Contenedores/blocks.h
         Contenedores/Grafo2.cpp
-        Contenedores/Grafo2.h)
+        Contenedores/Grafo2.h
+        Contenedores/tupla.h
+        Experimentacion_numerica/Ejercicio1/Ejercicio1.cpp
+        Experimentacion_numerica/Ejercicio1/Ejercicio1.h Contenedores/tupla.h)

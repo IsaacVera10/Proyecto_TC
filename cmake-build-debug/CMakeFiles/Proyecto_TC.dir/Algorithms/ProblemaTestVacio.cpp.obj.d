@@ -149,5 +149,6 @@ CMakeFiles/Proyecto_TC.dir/Algorithms/ProblemaTestVacio.cpp.obj: \
  C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
  C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc \
  D:/Proyecto_TC/Contenedores/double.h \
- D:/Proyecto_TC/Contenedores/blocks.h D:/Proyecto_TC/Contenedores/Queue.h \
- D:/Proyecto_TC/Contenedores/double.h
+ D:/Proyecto_TC/Contenedores/blocks.h D:/Proyecto_TC/Contenedores/tupla.h \
+ D:/Proyecto_TC/Contenedores/Queue.h D:/Proyecto_TC/Contenedores/double.h \
+ D:/Proyecto_TC/Contenedores/tupla.h

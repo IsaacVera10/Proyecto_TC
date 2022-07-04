@@ -219,10 +219,10 @@ void Pregunta_4(){
     AFN.display();
 
 
-    grafo AFD = buildAFD(alfabeto, num_Ts, AFN);
+    //grafo AFD = buildAFD(alfabeto, num_Ts, AFN);
 
     AFN.clear();
-    AFD.clear();
+    //AFD.clear();
     //delete [] Ss;
 
 }

@@ -124,6 +124,15 @@
 		<Unit filename="D:/Proyecto_TC/Contenedores/double.h">
 			<Option target="Proyecto_TC"/>
 		</Unit>
+		<Unit filename="D:/Proyecto_TC/Contenedores/tupla.h">
+			<Option target="Proyecto_TC"/>
+		</Unit>
+		<Unit filename="D:/Proyecto_TC/Experimentacion_numerica/Ejercicio1/Ejercicio1.cpp">
+			<Option target="Proyecto_TC"/>
+		</Unit>
+		<Unit filename="D:/Proyecto_TC/Experimentacion_numerica/Ejercicio1/Ejercicio1.h">
+			<Option target="Proyecto_TC"/>
+		</Unit>
 		<Unit filename="D:/Proyecto_TC/main.cpp">
 			<Option target="Proyecto_TC"/>
 		</Unit>

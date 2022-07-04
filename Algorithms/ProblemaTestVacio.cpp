@@ -84,9 +84,9 @@ void Pregunta_6(){
     cin >> variables;//La primera variable sera la inicial.
     cin >> num_reglas;
 
-    pair<string, int>* reglasContadas = new pair<string, int> [num_reglas]; //Reglas_count
+    tupla<string, int>* reglasContadas = new tupla<string, int> [num_reglas]; //Reglas_count
 
-    pair<bool, DoubleList<blocks>>* generadores = new pair<bool, DoubleList<blocks>> [variables.length()]; //el tamaño no sería variables?
+    tupla<bool, DoubleList<blocks>>* generadores = new tupla<bool, DoubleList<blocks>> [variables.length()]; //el tamaño no sería variables?
 
     QueueNode<char> cola;
 
@@ -96,12 +96,7 @@ void Pregunta_6(){
         reglasContadas[x].second=0;
     }
 
-    //OLVIDALO, seria agregar complejidad nomas, he probado un poco como seria y seria tedioso hacerlo creo, trabajalogo
-    //normalmente con la posicion dentro de la regla.
 
-
-    //CIERTO MANO, si detectas que algun cont es = 0 al terminar una regla agregas el primer caracter de la regla en la cola.ok
-    //Seteo los contadores y marcar ocurrencias
     for(int i=0;i<num_reglas;i++){
         for(int j=2;j<reglasContadas[i].first.length();j++){//contadores
             if(variables.find(reglasContadas[i].first[j])!=string::npos){ //Si el caracter es una variable

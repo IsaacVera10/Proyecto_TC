@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/Proyecto_TC/Algorithms/ProblemaTestVacio.cpp" "CMakeFiles/Proyecto_TC.dir/Algorithms/ProblemaTestVacio.cpp.obj" "gcc" "CMakeFiles/Proyecto_TC.dir/Algorithms/ProblemaTestVacio.cpp.obj.d"
   "D:/Proyecto_TC/Contenedores/Grafo.cpp" "CMakeFiles/Proyecto_TC.dir/Contenedores/Grafo.cpp.obj" "gcc" "CMakeFiles/Proyecto_TC.dir/Contenedores/Grafo.cpp.obj.d"
   "D:/Proyecto_TC/Contenedores/Grafo2.cpp" "CMakeFiles/Proyecto_TC.dir/Contenedores/Grafo2.cpp.obj" "gcc" "CMakeFiles/Proyecto_TC.dir/Contenedores/Grafo2.cpp.obj.d"
+  "D:/Proyecto_TC/Experimentacion_numerica/Ejercicio1/Ejercicio1.cpp" "CMakeFiles/Proyecto_TC.dir/Experimentacion_numerica/Ejercicio1/Ejercicio1.cpp.obj" "gcc" "CMakeFiles/Proyecto_TC.dir/Experimentacion_numerica/Ejercicio1/Ejercicio1.cpp.obj.d"
   "D:/Proyecto_TC/main.cpp" "CMakeFiles/Proyecto_TC.dir/main.cpp.obj" "gcc" "CMakeFiles/Proyecto_TC.dir/main.cpp.obj.d"
   )
 
